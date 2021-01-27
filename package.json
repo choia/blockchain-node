@@ -1,0 +1,20 @@
+{
+  "name": "webbrowse_project",
+  "version": "1.0.0",
+  "description": "Typescript Blockchain Project",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "serve",
+    "compileDeploy": "tsc && npm run deploy",
+    "deploy": "copyfiles -f src/browse/*.html src/browse/*.css dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Choi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "serve": "^11.3.2",
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.1.3"
+  }
+}
